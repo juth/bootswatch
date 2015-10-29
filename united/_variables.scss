@@ -15,11 +15,18 @@ $gray:                   #777 !default; // #555
 $gray-light:             #AEA79F !default;   // #999
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #DD4814 !default;
-$brand-success:         #38B44A !default;
-$brand-info:            #772953 !default;
-$brand-warning:         #EFB73E !default;
-$brand-danger:          #DF382C !default;
+// Colors form Flatly
+$brand-primary:         #2C3E50 !default;
+$brand-success:         #18BC9C !default;
+$brand-info:            #3498DB !default;
+$brand-warning:         #F39C12 !default;
+$brand-danger:          #E74C3C !default;
+
+// $brand-primary:         #DD4814 !default;
+// $brand-success:         #38B44A !default;
+// $brand-info:            #772953 !default;
+// $brand-warning:         #EFB73E !default;
+// $brand-danger:          #DF382C !default;
 
 
 //== Scaffolding
