@@ -6812,11 +6812,45 @@ button.close {
   }
 }
 .progress {
-  height: 11px;
+  position: relative;
+  background-color: #18bc9c;
+  padding: 13px;
+  padding-left: 50px;
+  height: 35px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.progress:before {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  content: " ";
+  width: -webkit-calc(100% - 60px);
+  width: calc(100% - 60px);
+  height: 9px;
+  border-radius: 2px;
+  background-color: #128f76;
+}
 .progress .progress-bar {
+  position: relative;
+  background-color: #fff;
+  border-radius: 2px;
   font-size: 10px;
   line-height: 10px;
+}
+.progress span {
+  background-color: #128f76;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: -webkit-calc(100% - 10px);
+  height: calc(100% - 10px);
+  padding: 7px;
+  text-align: center;
+  line-height: 1em;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 14px;
 }
