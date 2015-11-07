@@ -48,6 +48,24 @@
 // Typography =================================================================
 
 // Tables =====================================================================
+.table-striped{
+  border-radius: 2px;
+  overflow: hidden;
+
+  thead,
+  tbody tr:nth-child(even){
+    background-color: @gray-light;
+  }
+
+  tbody tr:nth-child(odd){
+    background-color: @gray-lighter;
+  }
+
+  th,
+  td{
+    border: none !important;
+  }
+}
 
 // Forms ======================================================================
 
@@ -57,47 +75,49 @@
 
 // Progress bars ==============================================================
 
+.progress-wrap{
+  border-radius: 2px;
+  overflow: hidden;
+}
+
 .progress {
   position: relative;
-  background-color: @brand-success;
+  background-color: @gray-lighter;
   padding: 13px;
-  padding-left: 50px;
+  padding-left: 110px;
   height: 35px;
+  border-radius: 0;
 
   &:before{
     position: absolute;
     z-index: 0;
     display: block;
     content: " ";
-    width: calc(100% - 60px);
+    width: calc(100% - 120px);
     height: 9px;
-    border-radius: 2px;
-    background-color: darken(@brand-success, 10%);
+    background-color: #fff;
   }
 
   .box-shadow(none);
   .progress-bar {
     position: relative;
-    background-color: #fff;
-    border-radius: 2px;
+    background-color: @brand-success;
     font-size: 10px;
     line-height: 10px;
+    border-radius: 2px;
   }
 
   span{
-    background-color: darken(@brand-success, 10%);
+    background-color: @gray-light;
     display: block;
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 40px;
-    height: calc(100% - 10px);
-    padding: 7px;
-    text-align: center;
-    line-height: 1em;
-    color: #fff;
-    border-radius: 2px;
-    font-size: 14px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    line-height: 35px;
+    font-size: 10px;
   }
 }
 
