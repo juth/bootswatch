@@ -6,19 +6,18 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 0%); // #222
-@gray-dark:              lighten(@gray-base, 13%);   // #333
-@gray:                   #5C6BC0; // #555
-@gray-light:             #C5CAE9;   // #999
-@gray-lighter:           #E8EAF6; // #eee
+@gray-darker:            #222222; // #222
+@gray-dark:              #90919A;   // #333
+@gray:                   #00BCD4; // #555
+@gray-light:             #e8eaf6;   // #999
+@gray-lighter:           #F9F9FD; // #eee
 
 // Colors from Flatly
-@brand-primary:         #283593;
-@brand-success:         #3F51B5;
+@brand-primary:         @gray;
+@brand-success:         #00ACC1;
 @brand-info:            #3498DB;
 @brand-warning:         #F39C12;
-@brand-danger:          #FF1744;
+@brand-danger:          #FF5252;
 
 //@brand-primary:         #DD4814;
 //@brand-success:         #38B44A;
@@ -34,7 +33,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-darker;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -209,7 +208,7 @@
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-light;
+@input-color-placeholder:        @gray-dark;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -247,7 +246,7 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
-@dropdown-link-color:            @gray-dark;
+@dropdown-link-color:            @gray-darker;
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      #fff;
 //** Hover background for dropdown links.
@@ -398,7 +397,7 @@
 // Reset inverted navbar basics
 @navbar-inverse-color:                      #fff;
 @navbar-inverse-bg:                         @brand-success;
-@navbar-inverse-border:                     darken(@navbar-inverse-bg, 4%);
+@navbar-inverse-border:                     @navbar-inverse-bg;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 #fff;
@@ -718,8 +717,8 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #E8EAF6;
 
-@panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
+@panel-default-text:          @gray-darker;
+@panel-default-border:        #E8EAF6;
 @panel-default-heading-bg:    #E8EAF6;
 
 @panel-primary-text:          #fff;
@@ -842,7 +841,7 @@
 @kbd-bg:                      #333;
 
 @pre-bg:                      #E8EAF6;
-@pre-color:                   @gray-dark;
+@pre-color:                   @gray-darker;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
 
@@ -854,13 +853,13 @@
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
 //** Text muted color
-@text-muted:                  @gray-light;
+@text-muted:                  @gray-dark;
 //** Abbreviations and acronyms border color
-@abbr-border-color:           @gray-light;
+@abbr-border-color:           @gray-dark;
 //** Headings small color
-@headings-small-color:        @gray-light;
+@headings-small-color:        @gray-dark;
 //** Blockquote small color
-@blockquote-small-color:      @gray-light;
+@blockquote-small-color:      @gray-dark;
 //** Blockquote font size
 @blockquote-font-size:        (@font-size-base * 1.25);
 //** Blockquote border color
