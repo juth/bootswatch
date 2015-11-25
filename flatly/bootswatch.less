@@ -281,6 +281,17 @@ input, {
   border-radius: 2px;
   margin-bottom: 10px;
   overflow: hidden;
+  position: relative;
+}
+
+.progress-wrap:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 50px);
+  height: 100%;
+  border-right: 1px dashed #ff1f1f;
+  z-index: 1;
 }
 
 .progress {
