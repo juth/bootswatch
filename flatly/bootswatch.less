@@ -121,16 +121,19 @@ table,
   }
 }
 
-.table-striped{
+.table-striped,
+.list-group-striped{
   border-radius: 2px;
   overflow: hidden;
 
   thead,
-  tbody tr:nth-child(even){
+  tbody tr:nth-child(even),
+  .list-group-item:nth-child(odd){
     background-color: @gray-light;
   }
 
-  tbody tr:nth-child(odd){
+  tbody tr:nth-child(odd),
+  .list-group-item:nth-child(even){
     background-color: @gray-lighter;
   }
 
@@ -341,6 +344,19 @@ input, {
   .box-shadow(none);
 }
 
+.list-group-inverse{
+  .list-group-item{
+    background-color: @brand-primary;
+    border-color: darken(@brand-primary, 10%);
+    color: #fff;
+
+    &:hover{
+      background-color: darken(@brand-primary, 10%);
+      color: #fff;
+    }
+  }
+}
+
 a.list-group-item {
 
   &.active,
@@ -392,6 +408,14 @@ a.list-group-item {
 }
 
 .modal {
+  .modal-content{
+    overflow: hidden;
+  }
+
+  .modal-header{
+    background-color: @gray-light;
+  }
+
   .close {
     color: @text-color;
   }
