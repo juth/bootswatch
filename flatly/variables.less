@@ -8,13 +8,13 @@
 //## Gray and brand colors for use across Bootstrap.
 @gray-darker:            #222222; // #222
 @gray-dark:              #90919A;   // #333
-@gray:                   #00BCD4; // #555
+@gray:                   #D4D7E6; // #555
 @gray-light:             #EAECFB;   // #999
 @gray-lighter:           #F9F9FD; // #eee
 
 // Colors from Flatly
-@brand-primary:         @gray;
-@brand-success:         #00ACC1;
+@brand-primary:         #00ACC1;
+@brand-success:         #4CAF50;
 @brand-info:            #3498DB;
 @brand-warning:         #F39C12;
 @brand-danger:          #FF5252;
@@ -30,7 +30,7 @@
 @text-color:            @gray-darker;
 
 //** Global textual link color.
-@link-color:            @brand-success;
+@link-color:            @brand-primary;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      @link-color;
 //** Link hover decoration.
@@ -363,13 +363,13 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #777;
+@navbar-default-color:             #fff;
 @navbar-default-bg:                @brand-primary;
 @navbar-default-border:            transparent;
 
 // Navbar links
 @navbar-default-link-color:                #fff;
-@navbar-default-link-hover-color:          @brand-success;
+@navbar-default-link-hover-color:          @brand-primary;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
@@ -390,7 +390,7 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      #fff;
-@navbar-inverse-bg:                         @brand-success;
+@navbar-inverse-bg:                         @brand-danger;
 @navbar-inverse-border:                     transparent;
 
 // Inverted navbar links
@@ -447,19 +447,19 @@
 //##
 
 @pagination-color:                     #fff;
-@pagination-bg:                        @brand-success;
+@pagination-bg:                        @brand-primary;
 @pagination-border:                    transparent;
 
 @pagination-hover-color:               #fff;
-@pagination-hover-bg:                  darken(@brand-success, 15%);
+@pagination-hover-bg:                  darken(@brand-primary, 15%);
 @pagination-hover-border:              transparent;
 
 @pagination-active-color:              #fff;
-@pagination-active-bg:                 darken(@brand-success, 15%);
+@pagination-active-bg:                 darken(@brand-primary, 15%);
 @pagination-active-border:             transparent;
 
 @pagination-disabled-color:            @gray-lighter;
-@pagination-disabled-bg:               lighten(@brand-success, 15%);
+@pagination-disabled-bg:               lighten(@brand-primary, 15%);
 @pagination-disabled-border:           transparent;
 
 
@@ -496,8 +496,8 @@
 //## Define colors for form feedback states and, by default, alerts.
 
 @state-success-text:             #fff;
-@state-success-bg:               @brand-success;
-@state-success-border:           @brand-success;
+@state-success-bg:               @brand-primary;
+@state-success-border:           @brand-primary;
 
 @state-info-text:                #fff;
 @state-info-bg:                  @brand-info;
@@ -568,7 +568,7 @@
 //** Primary label background color
 @label-primary-bg:            @brand-primary;
 //** Success label background color
-@label-success-bg:            @brand-success;
+@label-success-bg:            @brand-primary;
 //** Info label background color
 @label-info-bg:               @brand-info;
 //** Warning label background color
@@ -654,7 +654,7 @@
 //** Default progress bar color
 @progress-bar-bg:             @brand-primary;
 //** Success progress bar color
-@progress-bar-success-bg:     @brand-success;
+@progress-bar-success-bg:     @brand-primary;
 //** Warning progress bar color
 @progress-bar-warning-bg:     @brand-warning;
 //** Danger progress bar color
