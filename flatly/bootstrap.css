@@ -7043,10 +7043,22 @@ input:focus {
 .progress-wrap {
   border-radius: 2px;
   margin-bottom: 10px;
-  overflow: hidden;
   position: relative;
 }
 .progress-wrap:before {
+  color: #ff1f1f;
+  content: "Expected";
+  position: absolute;
+  top: -23px;
+  left: -webkit-calc(50% + 50px);
+  left: calc(50% + 50px);
+  -ms-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+     transform: translate(-50%, 0%);
+  z-index: 1;
+}
+.progress-wrap:after {
   content: " ";
   position: absolute;
   top: 0;
@@ -7060,7 +7072,7 @@ input:focus {
   position: relative;
   background-color: #f9f9fd;
   padding: 13px;
-  padding-left: 110px;
+  padding-left: 120px;
   height: 35px;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -7071,8 +7083,8 @@ input:focus {
   z-index: 0;
   display: block;
   content: " ";
-  width: -webkit-calc(100% - 120px);
-  width: calc(100% - 120px);
+  width: -webkit-calc(100% - 130px);
+  width: calc(100% - 130px);
   height: 9px;
   background-color: #fff;
 }
@@ -7090,7 +7102,7 @@ input:focus {
   padding-left: 10px;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 110px;
   height: 100%;
   line-height: 35px;
   font-size: 10px;
