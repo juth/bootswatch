@@ -288,10 +288,14 @@ input, {
 }
 
 .progress-wrap:before{
-  color: #ff1f1f;
-  content: "Expected";
+  color: #999;
+  content: "Expected Performance";
   position: absolute;
-  top: -23px;
+  border: 1px solid #999;
+  border-radius: 1px;
+  padding: 2px 8px;
+  font-size: 12px;
+  top: -26px;
   left: calc(50% + 50px);
   -ms-transform: translate(-50%, 0%);
   -webkit-transform: translate(-50%, 0%);
@@ -305,7 +309,7 @@ input, {
   top: 0;
   left: calc(50% + 50px);
   height: 100%;
-  border-right: 1px dashed #ff1f1f;
+  border-right: 1px dashed #999;
   z-index: 1;
 }
 
